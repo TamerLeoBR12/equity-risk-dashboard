@@ -1,7 +1,7 @@
 import pandas as pd, yfinance as yf
 
 
-dados = pd.read_excel(r"C:\Users\RICARDO\Downloads\Damodaran.xls", sheet_name="ERPs by country", skiprows=7)
+dados = pd.read_excel("Damodaran.xls", sheet_name="ERPs by country", skiprows=7)
 dados = dados.iloc[:157, :6]
 dados = dados.astype({"Rating-based Default Spread": float,
               "Total Equity Risk Premium": float,
@@ -9,7 +9,7 @@ dados = dados.astype({"Rating-based Default Spread": float,
 
 #dados["Country Risk Premium"] = pd.to_numeric(dados["Country Risk Premium"])
 
-dados = pd.read_excel(r"C:\Users\RICARDO\Downloads\Damodaran.xls", sheet_name="ERPs by country", skiprows=7)
+dados = pd.read_excel("Damodaran.xls", sheet_name="ERPs by country", skiprows=7)
 dados = dados.iloc[:157, :6]
 dados = dados.astype({"Rating-based Default Spread": float,
               "Total Equity Risk Premium": float,
